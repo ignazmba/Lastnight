@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  tasks:
+  - name: Create route53RSGroup:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      Comment: ""
+      HostedZoneName: 
+      Name: 
+      TTL:
+      RecordSets: 
+      - 54.165.239.174
+    
